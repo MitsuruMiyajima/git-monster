@@ -1,0 +1,21 @@
+
+  <h1>モンスターをつくる</h1>
+
+  <p>カルーセル</p>
+
+  <form [formGroup]="form">
+
+    <mat-form-field>
+      <mat-label>名前</mat-label>
+      <input formControlName="name" matInput required placeholder="monster" type="text" autocomplete="off">
+    </mat-form-field>
+
+    <mat-radio-group formControlName="gender">
+      <mat-radio-button value="male">♂</mat-radio-button>
+      <mat-radio-button value="female">♀</mat-radio-button>
+    </mat-radio-group>
+
+    <button mat-raised-button color="primary">つくる</button>
+
+  </form>
+
